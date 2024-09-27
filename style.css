@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+    background-image: url("https://thumbs.dreamstime.com/b/medical-background-5994223.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    
+   
+  }
+
+
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+    opacity: 0.5; /* Adjust the opacity as needed */
+    z-index: -1;
+    background-color: rgba(0, 0, 100, 1);
+  }
+
+  .image {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  .container {
+    text-align: left;
+    padding: 50px;
+    position: relative;
+    z-index: 1;
+  }
+
+  
+
+  .input {
+    width: calc(100% - 20px); /* Adjust for padding inside the fieldset */
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  }
+
+  .comment {
+    width: calc(100% - 20px); /* Adjust for padding inside the fieldset */
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+    height: 150px; /* Make the textarea larger than the other input fields */
+  }
+  
+    fieldset {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    }
+  
+    #title, #description {
+      color:white;
+      text-align:center;
+      padding-top:20px;
+    }
+
+  
+
+      fieldset {
+        border: none;
+      }
+
+      label {
+        display: block;
+        margin: 10px 0;
+      }
+
+     
+
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
